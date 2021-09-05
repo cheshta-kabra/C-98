@@ -1,0 +1,16 @@
+def swapFileData():
+    fileName1=input('Enter any File name present in your PC')
+    print ('Your First file name is:',fileName1)
+    fileName2=input('Enter any File name present in your PC')
+    print ('Your Second file name is:',fileName2)
+    f_a=open(fileName1,'r')
+    f_b=open(fileName2,'r')
+    data_a=f_a.read()
+    data_b=f_b.read()
+    f_a=open(fileName1,'w')
+    f_b=open(fileName2,'w')
+    f_a.write(data_b)
+    f_b.write(data_a)
+    print('file swaped')
+
+swapFileData()
